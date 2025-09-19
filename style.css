@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('./fonts/Norse-Bold.woff2') format('woff2');
+    font-display: swap;
+}
+:root{
+    --norse-font: 'Norse'
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+    display: none;              
+}
+
+img[src$="avif"]{
+    margin: 0;
+    padding: 0;
+    height: inherit;
+}
+img[src$="png"]{
+    height: 90%;
+    margin: 0;
+    padding: 0;
+}
+#container{
+    height: inherit;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+#bg{
+    position: absolute;
+    top: 160px;
+    background-color:rgba(0, 0, 0, 0.5);
+    height: 15%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: var(--norse-font);
+    font-size: 4rem;
+}
