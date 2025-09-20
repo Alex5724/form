@@ -4,7 +4,10 @@
     font-display: swap;
 }
 :root{
-    --norse-font: 'Norse'
+    --norse-font: 'Norse';
+    --generic-font: sans-serif, Roboto, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --color-grn: #596D48;
+    --border-font-color: #E5E7EB;
 }
 body{
     margin: 0;
@@ -21,6 +24,7 @@ img[src$="avif"]{
     margin: 0;
     padding: 0;
     height: inherit;
+    width: 40vw;
 }
 img[src$="png"]{
     height: 90%;
@@ -44,5 +48,51 @@ img[src$="png"]{
     align-items: center;
     color: white;
     font-family: var(--norse-font);
-    font-size: 4rem;
+    font-size: 5rem;
+}
+main{
+    display: flex;
+    flex-direction: row;
+}
+h3{
+    font-family: var(--generic-font);
+    font-size: 1.5rem;
+}
+#text-header{
+    background-color: rgb(245, 245, 245);
+    width: calc(100vw - 40vw);
+    height: 30vh;
+    margin: 0;
+    padding: 8.2rem 0 0 3rem;
+    font-weight: 300;
+}
+.form-layout{
+    display: flex;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+}
+
+form{
+    width: 50%;
+    margin-left: 3rem;
+}
+#formular{
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3);
+    height: 40vh;
+}
+#formular > h3{
+    padding: 0 0 0 3rem;
+}
+input{
+    width: 200px;
+    height: 20px;
+    border: 1px solid var(--border-font-color);
+    border-radius: 3px;
+    background-color: rgba(254, 254, 254)
+}
+label{
+    font-family: var(--generic-font);
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: rgba(89, 94, 98)
 }
