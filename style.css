@@ -5,7 +5,7 @@
 }
 :root{
     --norse-font: 'Norse';
-    --generic-font: sans-serif, Roboto, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --generic-font: sans-serif, Roboto, system-ui, "Segoe UI", Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --color-grn: #596D48;
     --border-font-color: #E5E7EB;
 }
@@ -88,11 +88,62 @@ input{
     height: 20px;
     border: 1px solid var(--border-font-color);
     border-radius: 3px;
-    background-color: rgba(254, 254, 254)
+    background-color: rgba(254, 254, 254);
 }
 label{
     font-family: var(--generic-font);
     font-weight: 600;
     font-size: 0.8rem;
-    color: rgba(89, 94, 98)
+    color: rgba(89, 94, 98);
 }
+form > .form-layout:nth-child(3) > div> input:invalid{
+    border: 1px solid rgb(171, 101, 102);
+}
+input:focus{
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+#form-container > div:nth-child(3) > button{
+    background-color: var(--color-grn);
+    color: white;
+    border: none;
+    font-family: var(--generic-font);
+    font-size: 1rem;
+    font-weight: 600;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#form-container > div:nth-child(3){
+    margin-left: 3rem; 
+    margin-top: 3rem;
+}
+#form-container > div:nth-child(3) > p{
+    font-family: var(--generic-font);
+    margin-top: 2rem;
+}
+#form-container > div:nth-child(3) > p > span{
+    color: var(--color-grn);
+    font-weight: 600;
+}
+#container > p{
+    color: white;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 12rem;
+    font-family: var(--generic-font);
+    font-size: 1rem;
+    opacity: 0.7;
+}
+a{
+    color: white;
+}
+
+
+
+
+
+
+
